@@ -24,5 +24,6 @@ export default {
   font-size: 14px;
   line-height: 120%;
   color: #1a2a45;
+  background-color: transparent;
 }
 </style>
