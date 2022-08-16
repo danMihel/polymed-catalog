@@ -2,9 +2,9 @@
   <div class="select-wraper">
     <div @click="show = !show">
       <div class="select-container">
-          <label class="select">
-            {{ label }}
-          </label>
+        <label class="select">
+          {{ label }}
+        </label>
         <div class="select-right">
           <div class="select-sum">1</div>
           <img v-if="!show" src="@/assets/v.png" />
@@ -16,9 +16,10 @@
       <div v-if="show" class="select-items">
         <div v-for="option in options" :key="option.value">
           <div class="select-items__wraper">
-            {{ option }} 
-            <input type="checkbox"
-          /></div>
+            <div class="select-item">
+              {{ option }} <input type="checkbox" />
+            </div>
+          </div>
         </div>
       </div>
     </transition>
@@ -32,6 +33,7 @@ export default {
     label: String,
     default: () => [],
   },
+    
   data() {
     return {
       show: false,
@@ -49,16 +51,17 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-
-.select-items__wraper{
-    display: flex;
-    width: 87.5%;
-    justify-content: space-between;
+.select-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.select-items__wraper {
+  width: 87.5%;
 }
 
-
-.select-right{
-    display: flex;
+.select-right {
+  display: flex;
 }
 
 .select-sum {
