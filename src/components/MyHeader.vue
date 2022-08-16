@@ -8,14 +8,14 @@
           <li>Франчайзинг</li>
           <img src="@/assets/nav.png" />
           <li>Интернет магазин</li>
-          <Select :options="['О компании', 'Что-то еще']" />
+          <MySelect :options="['О компании', 'Что-то еще']" />
         </div>
-        <Select class="text-header__phone" :options="['8 (800) 33-33-299']" />
+        <MySelect class="text-header__phone" :options="['8 (800) 33-33-299']" />
         <div class="text-header__block">
           <li>Адреса</li>
           <img src="@/assets/nav.png" />
           <li>Москва</li>
-          <Select :options="['Eng', 'Ru']" />
+          <MySelect :options="['Eng', 'Ru']" />
         </div>
       </nav>
       <div class="search-line">
@@ -26,7 +26,7 @@
         </div>
         <img class="search-icon" src="@/assets/man.png" />
         <img class="search-icon" src="@/assets/cart.png" />
-        <Button :title="'Результаты'"></Button>
+        <MyButton :title="'Результаты'"/>
       </div>
     </div>
     <div class="submenu-container">
@@ -38,7 +38,7 @@
           <li>Запись к врачу</li>
           <li>Самодиагностика</li>
           <li>Акции</li>
-          <Select :options="['Еще',]" />
+          <MySelect :options="['Еще',]" />
         </nav>
         <div class="submenu">
           <img src="@/assets/describe.png" />
@@ -61,11 +61,11 @@
 </template>
 
 <script>
-import Select from "./UI/Select.vue";
-import Button from "./UI/Button.vue";
+import MySelect from "./UI/MySelect.vue";
+import MyButton from "./UI/MyButton.vue";
 export default {
-  name: "header",
-  components: { Select, Button },
+  name: "my-header",
+  components: { MySelect, MyButton },
 };
 </script>
 

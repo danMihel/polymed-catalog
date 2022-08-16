@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-  name: "select",
+  name: "my-select",
   props: {
     options: Array,
     default: () => [],
