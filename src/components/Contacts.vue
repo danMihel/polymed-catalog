@@ -49,7 +49,7 @@ export default {
   name: "contacts",
 };
 </script>
-<style>
+<style scoped>
 .contacts-wraper {
   display: flex;
   justify-content: space-around;
@@ -101,9 +101,5 @@ export default {
 .contacts-phone-wraper {
   margin-bottom: 39px;
 }
-.contacts-col__list {
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid rebeccapurple;
-}
+
 </style>

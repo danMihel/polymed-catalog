@@ -1,40 +1,42 @@
 <template>
   <section>
     <form>
-            <div class="subscribe-wraper">
-      <div class="subscribe-col">
-        <div class="subscribe-title">Подпишитесь и будьте в курсе</div>
-        <div>
-          Получайте специальные предложение и актуальные
-          <br />скидки на наши услуги продукты
+      <div class="subscribe-wraper">
+        <div class="subscribe-col">
+          <div class="subscribe-title">Подпишитесь и будьте в курсе</div>
+          <div>
+            Получайте специальные предложение и актуальные
+            <br />скидки на наши услуги продукты
+          </div>
         </div>
-      </div>
-      <div class="subscribe-col">
-        <div>
-             <input
-          class="subscribe-input"
-          type="email"
-          placeholder="Введите свой E-mail"
-        /> <MyButton :title="'Подписаться'"/>
-        </div>
-       
-        <br />
-        <input
-          type="checkbox"
-          class="custom-checkbox"
-          id="subscribe"
-          name="subscribe"
-          value="1"
-        />
-        <label for="subscribe"> 
-            <div>Принимаю условия &nbsp; <a>оферты</a> и &nbsp;<a>политики</a> <br />
-          <a>конфиденциальности</a></div>
-            </label
-        >
-      </div>
-    </div>
-    </form>
+        <div class="subscribe-col">
+          <div>
+            <input
+              class="subscribe-input"
+              type="email"
+              placeholder="Введите свой E-mail"
+            />
+            <MyButton :title="'Подписаться'" />
+          </div>
 
+          <br />
+          <input
+            type="checkbox"
+            class="custom-checkbox"
+            id="subscribe"
+            name="subscribe"
+            value="1"
+          />
+          <label for="subscribe">
+            <div>
+              Принимаю условия &nbsp; <a>оферты</a> и &nbsp;<a>политики</a>
+              <br />
+              <a>конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+      </div>
+    </form>
   </section>
 </template>
 <script>
@@ -46,8 +48,8 @@ export default {
 };
 </script>
 <style scoped>
-a{
-    font-weight: 600;
+a {
+  font-weight: 600;
 }
 .subscribe-wraper {
   display: flex;
@@ -98,7 +100,7 @@ a{
   height: 18px;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   margin-right: 8px;
   background-repeat: no-repeat;

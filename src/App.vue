@@ -109,6 +109,7 @@
   </section>
   <SubscribeForm />
   <Contacts/>
+  <Basement/>
 </template>
 
 <script>
@@ -124,6 +125,7 @@ import MyChekbox from "./components/UI/MyChekbox.vue";
 import MyButton from "./components/UI/MyButton.vue";
 import SubscribeForm from "@/components/SubscribeForm.vue";
 import Contacts from "./components/Contacts.vue";
+import Basement from "./components/Basement.vue";
 
 export default {
   name: "App",
@@ -140,7 +142,8 @@ export default {
     ChekboxSelect,
     MyChekbox,
     MyButton,
-    Contacts
+    Contacts,
+    Basement
 },
 };
 </script>
