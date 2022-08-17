@@ -1,29 +1,35 @@
 <template>
   <section>
+    <div class="bourger">
+      <img src="@/assets/bourger.png" />
+    </div>
+
     <div class="header-container">
-      <nav class="text-header">
-        <div class="text-header__block">
-          <li>Пациентам</li>
-          <li>Бизнесу</li>
-          <li>Франчайзинг</li>
-          <img src="@/assets/nav.png" />
-          <li>Интернет магазин</li>
-          <MySelect :options="['О компании', 'Что-то еще']" />
-        </div>
-        <div class="header-phone_wraper">
-          <img src="@/assets/v.png" />
-          <MySelect
-            class="text-header__phone"
-            :options="['&nbsp;8 (800) 33-33-299', '+7 (495) 150-80-32']"
-          />
-        </div>
-        <div class="text-header__block">
-          <li>Адреса</li>
-          <img src="@/assets/nav.png" />
-          <li>Москва</li>
-          <MySelect :options="['Eng', 'Ru']" />
-        </div>
-      </nav>
+      <div class="desctop">
+        <nav class="text-header">
+          <div class="text-header__block">
+            <li>Пациентам</li>
+            <li>Бизнесу</li>
+            <li>Франчайзинг</li>
+            <img src="@/assets/nav.png" />
+            <li>Интернет магазин</li>
+            <MySelect :options="['О компании', 'Что-то еще']" />
+          </div>
+          <div class="header-phone_wraper">
+            <img src="@/assets/v.png" />
+            <MySelect
+              class="text-header__phone"
+              :options="['&nbsp;8 (800) 33-33-299', '+7 (495) 150-80-32']"
+            />
+          </div>
+          <div class="text-header__block">
+            <li>Адреса</li>
+            <img src="@/assets/nav.png" />
+            <li>Москва</li>
+            <MySelect :options="['Eng', 'Ru']" />
+          </div>
+        </nav>
+      </div>
       <div class="search-line">
         <img class="logo" src="@/assets/logo.png" />
         <div class="search-input">
@@ -34,12 +40,12 @@
           />
           <img class="search-btn" src="@/assets/Search-icon.png" />
         </div>
-        <img class="search-icon" src="@/assets/man.png" />
-        <img class="search-icon" src="@/assets/cart.png" />
-        <MyButton :title="'Результаты'" />
+        <img class="search-icon desctop" src="@/assets/man.png" />
+        <img class="search-icon desctop" src="@/assets/cart.png" />
+        <MyButton class="desctop" :title="'Результаты'" />
       </div>
     </div>
-    <div class="submenu-container">
+    <div class="submenu-container tablet">
       <div class="submenu-wraper">
         <nav class="submenu">
           <li>Covid-19</li>
@@ -56,7 +62,7 @@
             <li>Расшифровка</li>
           </div>
           <div class="submenu-icon">
-            <img src="@/assets/television.png"/>
+            <img src="@/assets/television.png" />
             <li>Телемедицина</li>
           </div>
         </div>
@@ -87,6 +93,15 @@ export default {
 li {
   list-style-type: none;
 }
+.bourger {
+  display: none;
+  float: right;
+}
+.bourger img {
+  height: 45px;
+  width: 45px;
+  margin-left: 30px;
+}
 
 .header-container {
   max-width: 1140px;
@@ -97,6 +112,7 @@ li {
 
 .text-header {
   display: flex;
+  flex-wrap: wrap-reverse;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +182,7 @@ li {
   width: 49%;
   height: 44px;
   border-radius: 8px;
+  margin-right: 7px;
 }
 
 .search-input input {
@@ -206,13 +223,14 @@ li {
 .submenu-icon img {
   height: inherit;
   margin-right: 6px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .submenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .submenu-wraper {
@@ -262,5 +280,23 @@ li {
 
 .crumbs-active {
   color: #00b4ff;
+}
+
+@media (max-width: 990px) {
+  .bourger {
+    display: block;
+  }
+  .desctop {
+    display: none;
+  }
+  .search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .tablet {
+    display: none;
+  }
 }
 </style>

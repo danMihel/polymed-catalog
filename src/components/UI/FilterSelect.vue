@@ -16,10 +16,8 @@
       <div v-if="show" class="select-items">
         <div v-for="option in options" :key="option.value">
           <div @click="show = !show">{{ option }} 
-          
           </div>
         </div>
-        
       </div>
     </transition>
   </div>
@@ -59,7 +57,8 @@ export default {
 .select-container {
   margin: 9px 9px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .select-container img {

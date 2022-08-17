@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>{{ subsubTitle }}</h3>
+    <div class="h3">{{ subsubTitle }}</div>
   </section>
 </template>
 <script>
@@ -12,12 +12,13 @@ export default {
 };
 </script>
 <style scoped>
-h3 {
+.h3 {
   font-family: "PT Root UI";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 </style>

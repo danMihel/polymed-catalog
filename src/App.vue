@@ -36,9 +36,12 @@
             <MyButton class="next-btn" :title="'Показать еще'" />
           </div>
         </div>
-        <div>
-          <SubSubTitle class="subtitle" :subsubTitle="'Быстрый фильтр'" />
-          <MyFilter />
+        <div class="analis-right">
+          <div class="desctop">
+            <SubSubTitle :subsubTitle="'Быстрый фильтр'" />
+            <MyFilter />
+          </div>
+
           <FilterSelect
             :label="'Анализы при беременности'"
             :options="[
@@ -69,47 +72,49 @@
               <p>Сбросить все фильтры</p>
             </div>
           </div>
-          <div class="chekbox-wraper">
-            <MyChekbox
-              :options="[
-                'I триместр',
-                'II триместр',
-                'III триместр',
-                'Осложнения беременность',
-              ]"
-              :label="'Беременность'"
-            />
+          <div class="desctop">
+            <div class="chekbox-wraper">
+              <MyChekbox
+                :options="[
+                  'I триместр',
+                  'II триместр',
+                  'III триместр',
+                  'Осложнения беременность',
+                ]"
+                :label="'Беременность'"
+              />
+            </div>
+            <div class="chekbox-wraper">
+              <MyChekbox
+                :options="[
+                  'Хламидиоз',
+                  'Сифилис',
+                  'ВИЧ',
+                  'Гонорея',
+                  'Герпес',
+                  'Папилломавирус',
+                  'Уреа- и микоплазмоз',
+                  'Трихомониаз',
+                  'Кандидоз',
+                ]"
+                :label="'ЗППП'"
+              />
+            </div>
+            <div class="chekbox-wraper">
+              <MyChekbox :options="['Мониторинг беременности']" />
+            </div>
+            <div class="chekbox-wraper">
+              <MyChekbox :options="['Общий анализ крови']" />
+            </div>
+            <MyChekbox :options="['Общий анализ мочи']" />
           </div>
-          <div class="chekbox-wraper">
-            <MyChekbox
-              :options="[
-                'Хламидиоз',
-                'Сифилис',
-                'ВИЧ',
-                'Гонорея',
-                'Герпес',
-                'Папилломавирус',
-                'Уреа- и микоплазмоз',
-                'Трихомониаз',
-                'Кандидоз',
-              ]"
-              :label="'ЗППП'"
-            />
-          </div>
-          <div class="chekbox-wraper">
-            <MyChekbox :options="['Мониторинг беременности']" />
-          </div>
-          <div class="chekbox-wraper">
-            <MyChekbox :options="['Общий анализ крови']" />
-          </div>
-          <MyChekbox :options="['Общий анализ мочи']" />
         </div>
       </div>
     </div>
   </section>
   <SubscribeForm />
-  <Contacts/>
-  <Basement/>
+  <Contacts />
+  <Basement />
 </template>
 
 <script>
@@ -143,8 +148,8 @@ export default {
     MyChekbox,
     MyButton,
     Contacts,
-    Basement
-},
+    Basement,
+  },
 };
 </script>
 
@@ -161,13 +166,24 @@ export default {
 }
 .analis-wraper {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 .analis-left {
   margin-right: 48px;
 }
+
+.analis-right {
+  display: flex;
+  flex-direction: column;
+}
 .subtitle {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+.subsubtitle {
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .trash-container {
@@ -209,5 +225,20 @@ export default {
   align-items: center;
   justify-content: center;
   margin-top: 48px;
+}
+
+@media (max-width: 1195px) {
+  .analis-right {
+    width: 100%;
+  }
+  .card-container {
+    min-width: 100%;
+  }
+  .desctop {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
 }
 </style>
