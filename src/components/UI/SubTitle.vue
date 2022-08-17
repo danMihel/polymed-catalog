@@ -19,8 +19,6 @@ h2 {
   font-size: 32px;
   line-height: 120%;
   color: #1a2a45;
-  padding-top: 56px;
-  padding-bottom: 40px;
   max-width: 708px;
 }
 </style>

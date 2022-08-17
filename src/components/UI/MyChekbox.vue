@@ -1,9 +1,9 @@
 <template>
 
   <SubSubTitle :subsubTitle="label" />
-  <div v-for="option in options" :key="option.value">
+  <div v-for="option in options" :key="option.id">
     <div class="checkbox-items__wraper">
-      <div class="checkbox-item">{{ option }} <input type="checkbox" /></div>
+      <div class="checkbox-item"> <label :for="option.id">{{ option }}</label>  <input :id="option.id" type="checkbox" /></div>
     </div>
   </div>
 </template>
