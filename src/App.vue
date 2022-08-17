@@ -108,6 +108,7 @@
     </div>
   </section>
   <SubscribeForm />
+  <Contacts/>
 </template>
 
 <script>
@@ -121,7 +122,8 @@ import FilterSelect from "./components/UI/FilterSelect.vue";
 import ChekboxSelect from "./components/UI/ChekboxSelect.vue";
 import MyChekbox from "./components/UI/MyChekbox.vue";
 import MyButton from "./components/UI/MyButton.vue";
-import SubscribeForm from "./components/UI/SubscribeForm.vue";
+import SubscribeForm from "@/components/SubscribeForm.vue";
+import Contacts from "./components/Contacts.vue";
 
 export default {
   name: "App",
@@ -138,7 +140,8 @@ export default {
     ChekboxSelect,
     MyChekbox,
     MyButton,
-  },
+    Contacts
+},
 };
 </script>
 

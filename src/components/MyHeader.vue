@@ -10,7 +10,7 @@
           <li>Интернет магазин</li>
           <MySelect :options="['О компании', 'Что-то еще']" />
         </div>
-        <MySelect class="text-header__phone" :options="['8 (800) 33-33-299']" />
+        <MySelect class="text-header__phone" :options="['&nbsp;8 (800) 33-33-299', '+7 (495) 150-80-32']" />
         <div class="text-header__block">
           <li>Адреса</li>
           <img src="@/assets/nav.png" />
