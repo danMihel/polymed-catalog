@@ -51,10 +51,14 @@
           <MySelect :options="['Еще']" />
         </nav>
         <div class="submenu">
-          <img src="@/assets/describe.png" />
-          <li>Расшифровка</li>
-          <img src="@/assets/television.png" />
-          <li>Телемедицина</li>
+          <div class="submenu-icon">
+            <img src="@/assets/describe.png" />
+            <li>Расшифровка</li>
+          </div>
+          <div class="submenu-icon">
+            <img src="@/assets/television.png"/>
+            <li>Телемедицина</li>
+          </div>
         </div>
       </div>
     </div>
@@ -192,9 +196,23 @@ li {
   align-items: center;
 }
 
+.submenu-icon {
+  display: flex;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  max-height: 18px;
+}
+
+.submenu-icon img {
+  height: inherit;
+  margin-right: 6px;
+  overflow: hidden
+}
+
 .submenu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .submenu-wraper {
@@ -216,10 +234,6 @@ li {
 
 .submenu-container li:not(:last-child) {
   margin-right: 24px;
-}
-
-.submenu-container img {
-  margin-right: 6px;
 }
 
 .crumbs-container {
