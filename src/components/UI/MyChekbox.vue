@@ -1,5 +1,4 @@
 <template>
-
   <SubSubTitle :subsubTitle="label" />
   <div v-for="option in options" :key="option.id">
     <div class="checkbox-items__wraper">

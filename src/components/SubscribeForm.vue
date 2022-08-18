@@ -106,7 +106,6 @@ a {
   background-position: center center;
   background-size: 50% 50%;
 }
-
 .custom-checkbox:checked + label::before {
   border-color: #0b76ef;
   background-color: #0b76ef;

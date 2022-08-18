@@ -60,7 +60,6 @@
   font-size: 16px;
   line-height: 22px;
 }
-
 .active-filter div {
   color: #6d97ff;
 }

@@ -60,7 +60,6 @@ export default {
   padding-right: 10px;
   padding-left: 10px;
 }
-
 .contacts-col {
   margin-right: 5px;
 }
@@ -94,7 +93,6 @@ export default {
   height: 14px;
   width: 14px;
 }
-
 .contacts-phone {
   font-family: "PT Root UI";
   font-style: normal;
@@ -104,7 +102,6 @@ export default {
   color: #1a2a45;
   text-decoration: none;
 }
-
 .contacts-phone-sub {
   font-family: "PT Root UI";
   font-style: normal;
@@ -116,8 +113,6 @@ export default {
 .contacts-phone-wraper {
   margin-bottom: 39px;
 }
-
-
 @media (max-width: 810px) {
   .phone {
     display: flex;
@@ -130,9 +125,7 @@ export default {
   .contacts-phone {
     margin-right: 10px;
   }
-
 }
-
 @media (max-width: 530px) {
   .contacts-col{
     width: 100%;

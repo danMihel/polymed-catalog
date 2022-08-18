@@ -25,7 +25,6 @@
             <SubSubTitle :subsubTitle="'Быстрый фильтр'" />
             <MyFilter />
           </div>
-
           <FilterSelect
             :label="'Анализы при беременности'"
             :options="[
@@ -145,7 +144,6 @@ export default {
 #app {
   margin-top: 22px;
 }
-
 .container {
   max-width: 1140px;
   margin: auto;
@@ -159,7 +157,6 @@ export default {
   flex-direction: column;
   margin-right: 48px;
 }
-
 .analis-right {
   display: flex;
   flex-direction: column;
@@ -168,18 +165,15 @@ export default {
   margin-top: 80px;
   margin-bottom: 40px;
 }
-
 .subsubtitle {
   margin-bottom: 32px;
   margin-top: 32px;
 }
-
 .trash-container {
   display: flex;
   padding: 34px;
   border-bottom: 1px solid #e0e3f4;
 }
-
 .trash {
   display: flex;
   align-items: center;
@@ -191,7 +185,6 @@ export default {
   color: #00b4ff;
   margin: auto;
 }
-
 .trash img {
   margin-right: 12px;
 }
@@ -199,7 +192,6 @@ export default {
   border-bottom: 1px solid #e0e3f4;
   padding-bottom: 33px;
 }
-
 .next-btn {
   width: 162px !important;
   height: 44px !important;
@@ -207,7 +199,6 @@ export default {
   border: 1px solid #ff1b7a;
   color: #ff1b7a;
 }
-
 .next-btn__wraper {
   display: flex;
   align-items: center;
@@ -228,9 +219,7 @@ export default {
   .analis-wraper {
     flex-wrap: wrap-reverse;
   }
-
 }
-
 @media (max-width: 810px) {
 .subtitle {
   margin-top: 20px;

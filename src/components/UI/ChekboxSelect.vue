@@ -46,7 +46,6 @@ export default {
 .fade-leave-active {
   transition: opacity 0.2s ease-out;
 }
-
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -59,11 +58,9 @@ export default {
 .select-items__wraper {
   width: 87.5%;
 }
-
 .select-right {
   display: flex;
 }
-
 .select-sum {
   width: 30px;
   height: 30px;
@@ -91,7 +88,6 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-
 .select-container img {
   align-self: flex-end;
   margin-top: auto;
@@ -107,7 +103,6 @@ export default {
   color: #1a2a45;
   align-self: center;
 }
-
 .select-items {
   font-family: "PT Root UI";
   font-style: normal;
@@ -118,7 +113,6 @@ export default {
   margin-left: 19px;
   margin-bottom: 9px;
 }
-
 .select-subtitle {
   font-family: "PT Root UI";
   font-style: normal;

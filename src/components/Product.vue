@@ -53,13 +53,11 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
 .card-btn {
   margin-top: 16px;
   width: 132px;
   height: 44px;
 }
-
 .card-index {
   background: #e0e3f4;
   border-radius: 4px;
@@ -71,7 +69,6 @@ export default {
   line-height: 12px;
   color: #8790ae;
 }
-
 .card-text {
   font-family: "PT Root UI";
   font-style: normal;
@@ -81,7 +78,6 @@ export default {
   color: #1a2a45;
   margin-top: 22px;
 }
-
 .card-prise {
   font-family: "PT Root UI";
   font-style: normal;
@@ -90,7 +86,6 @@ export default {
   line-height: 30px;
   color: #1a2a45;
 }
-
 .card-blood {
   margin-top: 4px;
   font-family: "PT Root UI";
@@ -100,7 +95,6 @@ export default {
   line-height: 16px;
   color: #8790ae;
 }
-
 .card-left__base {
   display: flex;
   align-items: center;
@@ -112,15 +106,12 @@ export default {
   line-height: 16px;
   color: #8790ae;
 }
-
 .card-left__base img {
   margin-right: 10px;
 }
-
 .card-left__base div {
   margin-right: 24px;
 }
-
 @media (max-width: 490px) {
   .card-container {
     padding: 12px;

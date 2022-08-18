@@ -3,7 +3,6 @@
     <div class="bourger">
       <img src="@/assets/bourger.png" />
     </div>
-
     <div class="header-container">
       <div class="desctop">
         <nav class="text-header">
@@ -99,14 +98,12 @@ li {
   width: 45px;
   margin-left: 30px;
 }
-
 .header-container {
   max-width: 1140px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
 }
-
 .text-header {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -120,7 +117,6 @@ li {
   line-height: 120%;
   color: #1a2a45;
 }
-
 .text-header__phone {
   padding-right: 5px;
   font-family: "PT Root UI" !important;
@@ -144,35 +140,29 @@ li {
   height: 8px;
   height: 7px;
 }
-
 .text-header__block {
   display: flex;
   flex-direction: row;
 }
-
 .text-header__block li {
   margin-right: 24px;
 }
-
 .text-header__block img {
   width: 11.22px;
   height: 14px;
   margin-right: 7px;
 }
-
 .search-line {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   width: 170px;
   height: 42px;
   margin-right: 16px;
 }
-
 .search-input {
   display: flex;
   border: 1px solid #ff1b7a;
@@ -181,7 +171,6 @@ li {
   border-radius: 8px;
   margin-right: 7px;
 }
-
 .submenu-container {
   background: #f7f9fe;
   margin-top: 24px;
@@ -193,27 +182,23 @@ li {
   align-items: center;
   width: 100%;
 }
-
 .submenu-icon {
   display: flex;
   margin-right: 24px;
   margin-bottom: 4px;
   max-height: 18px;
 }
-
 .submenu-icon img {
   height: inherit;
   margin-right: 6px;
   overflow: hidden;
 }
-
 .submenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
-
 .submenu-wraper {
   display: flex;
   flex-direction: row;
@@ -221,7 +206,6 @@ li {
   width: 90%;
   max-width: 1140px;
 }
-
 .submenu-container li {
   font-family: "PT Root UI";
   font-style: normal;
@@ -230,18 +214,15 @@ li {
   line-height: 120%;
   color: #1a2a45;
 }
-
 .submenu-container li:not(:last-child) {
   margin-right: 24px;
 }
-
 .crumbs-container {
   max-width: 1140px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
 }
-
 .crumbs {
   color: #8790ae;
   display: flex;
@@ -254,11 +235,9 @@ li {
   line-height: 24px;
   margin-top: 16px;
 }
-
 .crumbs li {
   margin-right: 16px;
 }
-
 .crumbs-active {
   color: #00b4ff;
 }
@@ -276,7 +255,6 @@ li {
     width: 100%;
   }
 }
-
 @media (max-width: 540px) {
   .tablet {
     display: none;
@@ -288,7 +266,6 @@ li {
     display: flex;
     margin-left: 30px;
     margin-top: 10px;
-    
   }
 }
 </style>

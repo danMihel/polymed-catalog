@@ -15,8 +15,7 @@
     <transition name="fade">
       <div v-if="show" class="select-items">
         <div v-for="option in options" :key="option.value">
-          <div @click="show = !show">{{ option }} 
-          </div>
+          <div @click="show = !show">{{ option }}</div>
         </div>
       </div>
     </transition>
@@ -42,7 +41,6 @@ export default {
 .fade-leave-active {
   transition: opacity 0.2s ease-out;
 }
-
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -60,13 +58,11 @@ export default {
   justify-content: space-between;
   margin-right: 20px;
 }
-
 .select-container img {
- align-self: flex-end;
- margin-top: auto;
- margin-bottom: auto;
- margin-right: 24px;
- 
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 24px;
 }
 .select {
   font-family: "PT Root UI";
@@ -77,7 +73,6 @@ export default {
   color: #1a2a45;
   margin-right: 40px;
 }
-
 .select-items {
   font-family: "PT Root UI";
   font-style: normal;
@@ -88,7 +83,6 @@ export default {
   margin-left: 19px;
   margin-bottom: 9px;
 }
-
 .select-subtitle {
   font-family: "PT Root UI";
   font-style: normal;

@@ -21,7 +21,6 @@ h2 {
   color: #1a2a45;
   max-width: 708px;
 }
-
 @media (max-width: 810px) {
   h2 {
     font-size: 24px;

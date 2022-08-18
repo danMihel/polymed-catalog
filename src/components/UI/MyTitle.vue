@@ -24,11 +24,10 @@ h2 {
   border-bottom: 1px solid #e0e3f4;
   max-width: 708px;
 }
-
 @media (max-width: 810px) {
   h2 {
     font-size: 30px;
-  line-height: 36px;
+    line-height: 36px;
   }
 }
 </style>
