@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="analis-right">
-          <div class="desctop">
+          <div class="desctop-hide">
             <SubSubTitle :subsubTitle="'Быстрый фильтр'" />
             <MyFilter />
           </div>
@@ -72,7 +72,7 @@
               <p>Сбросить все фильтры</p>
             </div>
           </div>
-          <div class="desctop">
+          <div class="desctop-hide">
             <div class="chekbox-wraper">
               <MyChekbox
                 :options="[
@@ -234,7 +234,7 @@ export default {
   .card-container {
     min-width: 100%;
   }
-  .desctop {
+  .desctop-hide {
     display: none;
   }
 }

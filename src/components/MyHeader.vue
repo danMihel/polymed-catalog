@@ -32,14 +32,7 @@
       </div>
       <div class="search-line">
         <img class="logo" src="@/assets/logo.png" />
-        <div class="search-input">
-          <input
-            class=" "
-            type="search"
-            placeholder="Быстрый поиск нужного исследования..."
-          />
-          <img class="search-btn" src="@/assets/Search-icon.png" />
-        </div>
+        <MySearchInput class="search-line__search-input"/>
         <img class="search-icon desctop" src="@/assets/man.png" />
         <img class="search-icon desctop" src="@/assets/cart.png" />
         <MyButton class="desctop" :title="'Результаты'" />
@@ -68,6 +61,9 @@
         </div>
       </div>
     </div>
+    <div class="search-input-mobi">
+        <MySearchInput/>
+    </div>
     <div class="crumbs-container">
       <nav class="crumbs">
         <li class="crumbs-active">Polymed</li>
@@ -83,9 +79,10 @@
 <script>
 import MySelect from "./UI/MySelect.vue";
 import MyButton from "./UI/MyButton.vue";
+import MySearchInput from "./UI/MySearchInput.vue";
 export default {
   name: "my-header",
-  components: { MySelect, MyButton },
+  components: { MySelect, MyButton, MySearchInput },
 };
 </script>
 
@@ -185,23 +182,6 @@ li {
   margin-right: 7px;
 }
 
-.search-input input {
-  width: 100%;
-  border: none;
-  box-sizing: border-box;
-  outline: none;
-  border-radius: 8px;
-  padding-left: 16px;
-}
-
-.search-btn {
-  border-radius: 0px 8px 8px 0px;
-}
-
-.search-icon {
-  height: 18px;
-}
-
 .submenu-container {
   background: #f7f9fe;
   margin-top: 24px;
@@ -281,7 +261,9 @@ li {
 .crumbs-active {
   color: #00b4ff;
 }
-
+.search-input-mobi {
+  display: none;
+}
 @media (max-width: 990px) {
   .bourger {
     display: block;
@@ -297,6 +279,15 @@ li {
 @media (max-width: 540px) {
   .tablet {
     display: none;
+  }
+  .search-line__search-input {
+   display: none;
+  }
+  .search-input-mobi {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+    
   }
 }
 </style>
