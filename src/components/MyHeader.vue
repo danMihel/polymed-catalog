@@ -143,6 +143,7 @@ li {
 .text-header__block {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .text-header__block li {
   margin-right: 24px;
