@@ -191,6 +191,7 @@ li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .submenu-icon {

@@ -85,7 +85,7 @@ a {
 }
 .assistent-wraper {
   display: flex;
-  align-items: center;
+  justify-items: center;
   margin-bottom: 22px;
 }
 
@@ -118,5 +118,25 @@ a {
 }
 .basement-social img {
   margin-left: 32px;
+}
+
+@media (max-width: 450px) {
+  .bord {
+    margin-top: 10px;
+  }
+  .basement-social{
+    margin-top: 30px;
+  }
+  .basement-text{
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 820px) {
+  .bord {
+    width: auto;
+  }
 }
 </style>

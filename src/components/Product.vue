@@ -8,7 +8,7 @@
           <img src="@/assets/clock.png" />
           <div>{{ product.terms }}</div>
           <img src="@/assets/house.png" />
-           <div>{{ product.home }}</div>
+          <div>{{ product.home }}</div>
         </div>
       </div>
       <div class="card-right">
@@ -39,14 +39,12 @@ export default {
   background: #f7f9fe;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
-  max-width: 752px;
   margin-top: 24px;
 }
 .card-left {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  max-width: 532px;
   margin-right: 25px;
 }
 .card-right {
@@ -112,14 +110,32 @@ export default {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #8790AE;
+  color: #8790ae;
 }
 
-.card-left__base img{
+.card-left__base img {
   margin-right: 10px;
 }
 
-.card-left__base div{
+.card-left__base div {
   margin-right: 24px;
+}
+
+@media (max-width: 490px) {
+  .card-container {
+    padding: 12px;
+  }
+  .card-btn {
+    margin-top: 16px;
+    width: 102px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .card-left {
+  margin-right: 1px;
+}
 }
 </style>

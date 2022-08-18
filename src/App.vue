@@ -6,31 +6,15 @@
       <SubTitle class="subtitle" :subTitle="'Планирование беременности'" />
       <div class="analis-wraper">
         <div class="analis-left">
-          <div
-            class="product"
-            v-for="item of $store.state.pregnancy"
-            :key="item.id"
-          >
-            <Product
-              :product="item"
-              :key="Date.now()"
-              class="product-container"
-            />
+          <div v-for="item of $store.state.pregnancy" :key="item.id">
+            <Product :product="item" :key="Date.now()" />
           </div>
           <SubTitle
             class="subtitle"
             :subTitle="'Обследования во время беременности'"
           />
-          <div
-            class="product"
-            v-for="item of $store.state.survey"
-            :key="item.id"
-          >
-            <Product
-              :product="item"
-              :key="Date.now()"
-              class="product-container"
-            />
+          <div v-for="item of $store.state.survey" :key="item.id">
+            <Product :product="item" :key="Date.now()" />
           </div>
           <div class="next-btn__wraper">
             <MyButton class="next-btn" :title="'Показать еще'" />
@@ -154,21 +138,25 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   margin-top: 22px;
 }
 
 .container {
   max-width: 1140px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin: auto;
+  padding: 10px;
 }
 .analis-wraper {
   display: flex;
-  flex-wrap: wrap-reverse;
 }
 .analis-left {
+  display: flex;
+  flex-direction: column;
   margin-right: 48px;
 }
 
@@ -237,8 +225,16 @@ export default {
   .desctop-hide {
     display: none;
   }
+  .analis-wraper {
+    flex-wrap: wrap-reverse;
+  }
+
 }
 
-@media (max-width: 540px) {
+@media (max-width: 810px) {
+.subtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 }
 </style>

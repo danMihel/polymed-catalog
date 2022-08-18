@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="subscribe-col">
-          <div>
+          <div class="subscribe-input-container">
             <input
               class="subscribe-input"
               type="email"
@@ -18,7 +18,6 @@
             />
             <MyButton :title="'Подписаться'" />
           </div>
-
           <br />
           <input
             type="checkbox"
@@ -112,5 +111,38 @@ a {
   border-color: #0b76ef;
   background-color: #0b76ef;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+@media (max-width: 490px) {
+  .subscribe-input {
+   width: 90%;
+  }
+  .subscribe-title{
+    text-align: center;
+  }
+}
+
+@media (max-width: 990px) {
+  .subscribe-wraper {
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  .subscribe-col{
+    align-items: center;
+    margin-bottom : 20px;
+  }
+  .subscribe-input-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subscribe-input{
+    margin-bottom: 20px;
+  }
+ 
 }
 </style>
